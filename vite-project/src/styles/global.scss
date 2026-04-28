@@ -1,0 +1,16 @@
+@use './reset';
+@use './variables' as v;
+
+html,
+body {
+  background: #fff;
+  color: v.$gray-dark;
+  font-family: v.$font-primary;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}

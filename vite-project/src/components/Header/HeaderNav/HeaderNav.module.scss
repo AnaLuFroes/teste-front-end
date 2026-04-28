@@ -1,0 +1,38 @@
+@use '../../../styles/variables' as v;
+
+.headerNav {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 91px;
+
+  a {
+    font-size: 12px;
+    font-weight: 700;
+    color: v.$gray-light;
+    letter-spacing: 0.01em;
+    text-transform: none;
+
+    &:hover {
+      color: v.$blue;
+    }
+  }
+}
+
+.active {
+  color: v.$blue !important;
+}
+
+.signature {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: v.$gray-light;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  color: v.$gray-light;
+}

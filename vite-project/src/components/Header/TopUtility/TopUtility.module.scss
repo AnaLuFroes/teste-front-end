@@ -1,0 +1,25 @@
+@use '../../../styles/variables' as v;
+
+.topUtility {
+  height: 32px;
+  border-bottom: 1px solid rgb(240, 240, 240);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 119px;
+  color: v.$gray-light;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.util {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  color: v.$gray-light;
+}

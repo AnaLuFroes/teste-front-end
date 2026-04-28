@@ -1,0 +1,22 @@
+@use '../../styles/variables' as v;
+
+.page {
+  width: v.$page-width;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.loading,
+.error {
+  width: v.$page-width;
+  margin: 80px auto 0;
+  text-align: center;
+  font-family: v.$font-primary;
+  font-size: 18px;
+  color: v.$gray-mid;
+  padding: 40px;
+}
+
+.error {
+  color: rgb(180, 40, 40);
+}

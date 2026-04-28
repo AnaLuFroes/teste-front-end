@@ -1,0 +1,31 @@
+@use '../../../styles/variables' as v;
+
+.col {
+  h4 {
+    font-family: v.$font-primary;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    color: v.$purple;
+    margin-bottom: 24px;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  a {
+    font-family: v.$font-primary;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    color: v.$gray-dark;
+
+    &:hover {
+      color: v.$blue;
+    }
+  }
+}

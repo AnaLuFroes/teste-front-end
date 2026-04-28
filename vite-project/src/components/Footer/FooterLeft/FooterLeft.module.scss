@@ -1,0 +1,72 @@
+@use '../../../styles/variables' as v;
+
+.footerLeft {
+  width: 354px;
+}
+
+.footerLogo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: v.$font-primary;
+  font-weight: 700;
+  font-size: 28px;
+  color: v.$purple;
+}
+
+.brandMark {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: v.$yellow;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  font-size: 24px;
+  color: v.$purple;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 7px;
+    bottom: 10px;
+    width: 16px;
+    height: 3px;
+    background: v.$purple;
+    border-radius: 2px;
+  }
+}
+
+.about {
+  margin-top: 18px;
+  font-family: v.$font-primary;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.4;
+  color: v.$gray-dark;
+}
+
+.socials {
+  margin-top: 27px;
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.socialIcon {
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  color: rgb(74, 74, 74);
+
+  &:hover {
+    color: v.$blue;
+  }
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}

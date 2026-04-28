@@ -1,0 +1,49 @@
+@use '../../../styles/variables' as v;
+
+.tabs {
+  margin-top: 24px;
+  display: flex;
+  border-collapse: collapse;
+}
+
+.tab {
+  flex: 1;
+  height: 40px;
+  background: #fff;
+  border: 1px solid v.$line-3;
+  margin-left: -1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: v.$font-primary;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  color: v.$blue;
+  text-transform: lowercase;
+  cursor: pointer;
+  transition: background 0.15s;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:hover:not(.active) {
+    background: v.$bg-soft;
+  }
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.upperMixed {
+  text-transform: none;
+}
+
+.active {
+  background: v.$blue;
+  color: #fff;
+  border-color: v.$blue;
+  z-index: 1;
+}

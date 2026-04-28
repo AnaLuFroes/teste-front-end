@@ -1,0 +1,10 @@
+@use '../../styles/variables' as v;
+
+.header {
+  width: v.$page-width;
+  height: 144px;
+  position: relative;
+  padding: 0 80px;
+  margin: 0 auto;
+  background: #fff;
+}

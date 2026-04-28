@@ -1,0 +1,25 @@
+@use '../../../styles/variables' as v;
+
+.headerIcons {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-left: auto;
+}
+
+.iconBtn {
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  color: v.$gray-light;
+
+  &:hover {
+    color: v.$blue;
+  }
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}

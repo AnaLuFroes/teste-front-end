@@ -1,0 +1,40 @@
+@use '../../../styles/variables' as v;
+
+.titleWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 0;
+}
+
+.line {
+  flex: 1;
+  max-width: 360px;
+  height: 1px;
+  background: v.$line-2;
+}
+
+.title {
+  font-family: v.$font-primary;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1;
+  color: v.$blue;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.link {
+  text-align: center;
+  margin-top: 6px;
+  font-family: v.$font-primary;
+  font-weight: 700;
+  font-size: 15px;
+  color: v.$gray-dark;
+
+  a {
+    border-bottom: 1px solid v.$gray-dark;
+    padding-bottom: 1px;
+  }
+}

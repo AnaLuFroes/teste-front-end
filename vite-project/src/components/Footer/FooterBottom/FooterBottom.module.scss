@@ -1,0 +1,15 @@
+@use '../../../styles/variables' as v;
+
+.footerBottom {
+  width: v.$page-width;
+  height: 47px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: v.$font-primary;
+  font-weight: 300;
+  font-size: 13px;
+  color: v.$gray-dark;
+  margin: 0 auto;
+}

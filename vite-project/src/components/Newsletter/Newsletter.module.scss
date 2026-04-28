@@ -1,0 +1,105 @@
+@use '../../styles/variables' as v;
+
+.newsletter {
+  margin-top: 90px;
+  width: v.$page-width;
+  height: 162px;
+  background: v.$purple;
+  padding: 40px 80px;
+  display: flex;
+  align-items: flex-start;
+  gap: 124px;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text {
+  width: 515px;
+}
+
+.title {
+  font-family: v.$font-secondary;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.desc {
+  margin-top: 8px;
+  font-family: v.$font-primary;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.form {
+  width: 639px;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+.input {
+  width: 233px;
+  height: 42px;
+  background: #fff;
+  border: 1px solid v.$line;
+  border-radius: 8px;
+  padding: 0 24px;
+  font-family: v.$font-primary;
+  font-size: 14px;
+  color: v.$gray-dark;
+  outline: none;
+  text-align: left;
+
+  &::placeholder {
+    color: rgb(103, 103, 103);
+    text-align: center;
+  }
+}
+
+.submit {
+  width: 157px;
+  height: 42px;
+  background: v.$yellow;
+  border-radius: 8px;
+  font-family: v.$font-primary;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 12px;
+  color: rgb(22, 22, 21);
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: filter 0.15s;
+
+  &:hover {
+    filter: brightness(0.95);
+  }
+}
+
+.check {
+  margin-top: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: v.$font-primary;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+
+  input {
+    width: 15px;
+    height: 15px;
+    border-radius: 1px;
+    background: rgb(246, 246, 246);
+    border: 1px solid rgb(140, 52, 43);
+    margin: 0;
+    accent-color: v.$blue;
+    cursor: pointer;
+  }
+}

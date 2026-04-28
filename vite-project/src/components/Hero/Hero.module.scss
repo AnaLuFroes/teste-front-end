@@ -1,0 +1,74 @@
+@use '../../styles/variables' as v;
+
+.hero {
+  width: v.$page-width;
+  height: 390px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  background-image: url('/assets/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.85) 0%,
+      rgba(0, 0, 0, 0.4) 50%,
+      rgba(0, 0, 0, 0) 75%
+    );
+  }
+}
+
+.heroContent {
+  position: relative;
+  padding: 78px 0 0 81px;
+  width: 720px;
+  color: #fff;
+}
+
+.heroTitle {
+  font-family: v.$font-primary;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 50px;
+  color: #fff;
+  max-width: 720px;
+}
+
+.heroSub {
+  font-family: v.$font-primary;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  color: #fff;
+  margin-top: 36px;
+
+  strong {
+    font-weight: 700;
+  }
+}
+
+.heroCta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 41px;
+  background: v.$yellow;
+  border-radius: 5px;
+  padding: 13px 49px;
+  font-family: v.$font-primary;
+  font-weight: 700;
+  font-size: 16px;
+  color: v.$purple;
+  line-height: 1;
+  cursor: pointer;
+  transition: filter 0.15s;
+
+  &:hover {
+    filter: brightness(0.95);
+  }
+}

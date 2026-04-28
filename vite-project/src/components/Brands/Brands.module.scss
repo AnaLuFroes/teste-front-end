@@ -1,0 +1,22 @@
+@use '../../styles/variables' as v;
+
+.brands {
+  margin: 90px auto 0;
+  width: 1250px;
+}
+
+.title {
+  font-family: v.$font-primary;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1;
+  color: v.$blue;
+  text-align: center;
+}
+
+.row {
+  margin-top: 32px;
+  display: flex;
+  gap: 42px;
+  justify-content: center;
+}

@@ -1,0 +1,24 @@
+@use '../../styles/variables' as v;
+
+.footer {
+  width: v.$page-width;
+  background: v.$footer-bg;
+  padding: 42px 80px;
+  display: flex;
+  gap: 90px;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.divider {
+  width: 1px;
+  height: 198px;
+  background: rgba(40, 40, 40, 0.18);
+  margin-top: 41px;
+}
+
+.cols {
+  display: flex;
+  gap: 100px;
+  margin-top: 41px;
+}
